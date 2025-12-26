@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhà Hàng Miền Trung - FISH1</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: Arial; background: #f7f4f0; }
+    
+        header 
+        {
+            background: linear-gradient(rgba(120,30,10,.75),rgba(120,30,10,.75)),
+            url("https://upload.wikimedia.org/wikipedia/commons/6/63/Bun_bo_Hue.jpg");
+            background-size: cover; background-position: center;
+            color: white; text-align: center; padding: 70px 20px;
+        }
+    
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        h2 { text-align: center; color: #7a1f12; margin-bottom: 25px; text-transform: uppercase; }
+    
+        .menu 
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+    
+        .dish 
+        {
+            background: white; border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            position: relative; overflow: hidden;
+        }
+    
+        .dish img { width: 100%; height: 180px; object-fit: cover; }
+        .dish-content { padding: 15px; }
+        .dish-content h3 { color: #7a1f12; font-size: 1.1em; margin-bottom: 5px; }
+        .price { color: #e65100; font-weight: bold; }
+    
+        /* CSS cho bộ chọn số lượng mới */
+        .quantity-selector {
+            position: absolute; top: 10px; right: 10px; 
+            background: rgba(255,255,255,0.9); border-radius: 8px;
+            padding: 5px 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: flex; align-items: center; gap: 5px;
+        }
+        
+        .quantity-selector label { font-size: 0.9em; font-weight: bold; color: #7a1f12; }
+        .quantity-selector select { border: 1px solid #7a1f12; border-radius: 4px; padding: 2px; }
+    
+        .order-box 
+        {
+            margin-top: 40px; background: white; padding: 25px;
+            border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            text-align: center;
+        }
+    
+        footer { background: #7a1f12; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        
+        .btn-submit 
+        {
+            display: block; width: 100%; max-width: 300px; margin: 20px auto;
+            padding: 15px; background: #7a1f12; color: white; border: none;
+            border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nhà Hàng Miền Trung</h1>
+    <p>Tinh hoa ẩm thực cố đô – Đậm đà bản sắc Việt</p>
+</header>
+
+<div class="container">
+    <h2>🍜 Thực đơn chính</h2>
+    <div class="menu">
+        <div class="dish">
+            <div class="quantity-selector">
+                <label>SL:</label>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSneue4OvbRZXF2gff3lxgEsDqqhaH3Yq-DJw&s">
+            <div class="dish-content">
+                <h3>Bún Bò Huế</h3>
+                <div class="price">45.000đ</div>
+            </div>
+        </div>
+
+        <div class="dish">
+            <div class="quantity-selector">
+                <label>SL:</label>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtETNR-Hf3EkQLNkddVm52Eu15Pdh3A16XqQ&s">
+            <div class="dish-content">
+                <h3>Mì Quảng Gà</h3>
+                <div class="price">40.000đ</div>
+            </div>
+        </div>
+
+        <div class="dish">
+            <div class="quantity-selector">
+                <label>SL:</label>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQnkpFqUa1tyqmvJWucPA9J-CuCAWCsJi3Q&s">
+            <div class="dish-content">
+                <h3>Cơm Hến</h3>
+                <div class="price">35.000đ</div>
+            </div>
+        </div>
+
+        <div class="dish">
+            <div class="quantity-selector">
+                <label>SL:</label>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWWv5Q3R_egOTBuxThfan6kCKGi20dfLN3Gg&s">
+            <div class="dish-content">
+                <h3>Bánh Bèo Chén (6 chén)</h3>
+                <div class="price">30.000đ</div>
+            </div>
+        </div>
+
+        <div class="dish">
+            <div class="quantity-selector">
+                <label>SL:</label>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpmBMIetAK1s6pr7xnDME1lKuPMgudl_nmyw&s">
+            <div class="dish-content">
+                <h3>Nem Lụi Huế (5 cây)</h3>
+                <div class="price">50.000đ</div>
+            </div>
+        </div>
+
+        <div class="dish">
+            <div class="quantity-selector">
+                <label>SL:</label>
+                <select>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpJXO99d1WDASeLlU8OrR3pJe8FwvpSMROQ&s">
+            <div class="dish-content">
+                <h3>Bún Mắm Nêm Đà Nẵng</h3>
+                <div class="price">35.000đ</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-box">
+        <h2>🧾 Gửi đơn đặt món</h2>
+        <div style="margin-bottom: 10px;">
+            <label>Chọn bàn ăn:</label>
+            <select id="table" style="padding: 5px; border-radius: 4px;">
+                <option value="Bàn 1">Bàn 1</option>
+                <option value="Bàn 2">Bàn 2</option>
+                <option value="Bàn 3">Bàn 3</option>
+                <option value="Bàn 4">Bàn 4</option>
+                <option value="Bàn 5">Bàn 5</option>
+             </select>
+        </div>
+        <button class="btn-submit">Gửi đơn đặt món</button>
+        <p style="font-size: 0.8em; color: #666;">(Lưu ý: Nút gửi đơn hiện tại chỉ mang tính minh họa)</p>
+    </div>
+</div>
+
+<footer>
+    © 2025 | Nhà hàng Miền Trung - Kính chúc quý khách ngon miệng!
+</footer>
+
+</body>
+</html>
